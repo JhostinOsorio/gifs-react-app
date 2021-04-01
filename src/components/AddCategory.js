@@ -9,7 +9,7 @@ const AddCategory = ({ setCategories }) => {
     e.preventDefault();
 
     if (inputValue.trim().length > 2) {
-      setCategories(c => [...c, inputValue])
+      setCategories(c => [inputValue, ...c])
       setInputValue('')
     } else {
       alert('Ingresar mas de dos letras por categoría')
