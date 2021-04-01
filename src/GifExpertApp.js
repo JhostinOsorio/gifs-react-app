@@ -13,12 +13,9 @@ const GifExpertApp = props => {
         setCategories={setCategories}
       />
       <hr />
-
-      <ol>
-        {
-          categories.map(category => <GifGrid key={category} category={category}/>)
-        }
-      </ol>
+      {
+        categories.map(category => <GifGrid key={category} category={category}/>)
+      }
     </>
   )
 }
